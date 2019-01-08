@@ -13,3 +13,5 @@
 ## FYI
  - This boilerplate works best with Drupal ^8.5
  - By default, the latest Drupal 8 version is installed
+ - You should always commit your composer.lock file
+

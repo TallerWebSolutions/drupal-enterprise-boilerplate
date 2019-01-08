@@ -3,5 +3,9 @@
     "description": "Boilerplate for creating projects with Drupal.",
     "require": {
         "drupal/core": "8.*"
+    },
+    "require-dev": {
+        "drush/drush": "^9.0",
+        "drupal/console": "1.*"
     }
 }
