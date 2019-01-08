@@ -1,6 +1,11 @@
 # Drupal Projects Boilerplate
 This boilerplate is based on how whe are currently working with Drupal at Taller. It may not be suitable for all kinds of projects and still needs lots of decoupling.
 
+## Dependencies
+ - Docker
+ - Docker-compose
+ - Make
+
 ## Setting up
  - Clone this repository
  - Remove .git folder
@@ -32,4 +37,3 @@ This boilerplate is based on how whe are currently working with Drupal at Taller
  - This boilerplate works best with Drupal ^8.5
  - By default, the latest Drupal 8 version is installed
  - You should always commit your composer.lock file
-
