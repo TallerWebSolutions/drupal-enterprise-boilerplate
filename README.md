@@ -3,12 +3,15 @@
 ## Setting up
  - Clone this repository
  - Remove .git folder
+ - Find/replace the following variables:
+   - asdf
 
 ## Features
  - Ready to use Drupal installation
  - Drush
  - Drupal Console
  - Node (with NVM)
+ - Pre configured Acquia deploy scripts
 
 ## FYI
  - This boilerplate works best with Drupal ^8.5
