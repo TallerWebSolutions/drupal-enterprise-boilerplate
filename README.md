@@ -16,6 +16,7 @@ This boilerplate is based on how whe are currently working with Drupal at Taller
 | GIT_USER_EMAIL | The email to be in the Git config while deploying to Acquia |
 | GIT_USER_NAME | The name to be in the Git config while deploying to Acquia |
 | DRUPAL_SITE_NAME | The name of your Drupal site |
+| SERVER_ADMIN | Apache server admin |
 
 ## Features
  - Ready to use Drupal installation
