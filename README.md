@@ -4,7 +4,8 @@ This boilerplate is based on how whe are currently working with Drupal at Taller
 ## Setting up
  - Clone this repository
  - Remove .git folder
- - Find/replace the following variables:
+ - Now is the moment I suggest you to create your own Git repo and commit the boilerplate code, but it is really up to you
+ - Find/replace the following variables (be carefull not to replace in this Readme):
 
 |||
 |---|---|
@@ -17,6 +18,8 @@ This boilerplate is based on how whe are currently working with Drupal at Taller
 | GIT_USER_NAME | The name to be in the Git config while deploying to Acquia |
 | DRUPAL_SITE_NAME | The name of your Drupal site |
 | SERVER_ADMIN | Apache server admin |
+
+ - Run `make`
 
 ## Features
  - Ready to use Drupal installation
