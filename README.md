@@ -1,10 +1,20 @@
 # Drupal Projects Boilerplate
+This boilerplate is based on how whe are currently working with Drupal at Taller. It may not be suitable for all kinds of projects and still needs lots of decoupling.
 
 ## Setting up
  - Clone this repository
  - Remove .git folder
  - Find/replace the following variables:
-   - asdf
+
+|||
+|---|---|
+| APP_IMAGE_NAME | The name of the Docker image for your site |
+| DB_CONTAINER_NAME | The name of the Docker container with the database |
+| CI_ACQUIA_DIR | The name of the folder to use in CI when deploying to Acquia |
+| ACQUIA_GIT_DOMAIN | The domain of Acquia's Git repository |
+| ACQUIA_GIT_REPO | The Acquia's Git repository of your project |
+| GIT_USER_EMAIL | The email to be in the Git config while deploying to Acquia |
+| GIT_USER_NAME | The name to be in the Git config while deploying to Acquia |
 
 ## Features
  - Ready to use Drupal installation
