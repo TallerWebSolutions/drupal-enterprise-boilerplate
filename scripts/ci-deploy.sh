@@ -32,13 +32,13 @@ sudo rm -Rf $ACQUIA_DIR/composer.lock
 sudo rm -Rf $ACQUIA_DIR/README.md
 
 # Copy new directories.
-cp -r ./src/web $ACQUIA_DIR/docroot
-cp -r ./src/scripts/acquia_hooks $ACQUIA_DIR/hooks
-cp -r ./src/vendor $ACQUIA_DIR/vendor
+cp -r ./web $ACQUIA_DIR/docroot
+cp -r ./scripts/acquia_hooks $ACQUIA_DIR/hooks
+cp -r ./vendor $ACQUIA_DIR/vendor
 cp -r ./bin $ACQUIA_DIR/bin
-cp ./src/composer.json $ACQUIA_DIR/composer.json
-cp ./src/composer.lock $ACQUIA_DIR/composer.lock
-cp ./src/README.md $ACQUIA_DIR/README.md
+cp ./composer.json $ACQUIA_DIR/composer.json
+cp ./composer.lock $ACQUIA_DIR/composer.lock
+cp ./README.md $ACQUIA_DIR/README.md
 
 # SimpleSamlPHP
 sudo ln -sr $ACQUIA_DIR/vendor/simplesamlphp/simplesamlphp/www/ $ACQUIA_DIR/docroot/simplesaml
