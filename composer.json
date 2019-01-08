@@ -1,6 +1,12 @@
 {
     "name": "taller/drupal-enterprise-boilerplate",
     "description": "Boilerplate for creating projects with Drupal.",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
     "require": {
         "drupal/core": "8.*"
     },
