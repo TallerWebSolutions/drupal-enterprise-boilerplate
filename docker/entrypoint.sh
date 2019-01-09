@@ -52,12 +52,12 @@ then
   # 5 - Install standard profile.
   cd /taller/app/web
   # Set PHP_OPTIONS environment variable to fix sendmail error.
-  /usr/bin/env PHP_OPTIONS="-d sendmail_path=`which true`" ../../bin/drush si standard --site-name="DRUPAL_SITE_NAME" --account-name="admin" --account-pass="123456" -y
+  /usr/bin/env PHP_OPTIONS="-d sendmail_path=`which true`" ../bin/drush si standard --site-name="DRUPAL_SITE_NAME" --account-name="admin" --account-pass="123456" -y
 
   # 6 - Import configs, if available.
   if [ -f /taller/app/site-id ]
   then
-    ../../bin/drush config-import --partial -y
+    ../bin/drush config-import --partial -y
   fi
 
 fi
