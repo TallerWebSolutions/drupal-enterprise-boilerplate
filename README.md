@@ -30,6 +30,12 @@ This boilerplate is based on how whe are currently working with Drupal at Taller
  - If everything went right, you should be able to access your Drupal site in your localhost
  - Commit Drupal generated files
 
+### Deploying
+ - In a Semaphore job, place the following command:
+```
+make ci-run
+```
+
 ## Features
  - Ready to use Drupal installation
  - Drush
