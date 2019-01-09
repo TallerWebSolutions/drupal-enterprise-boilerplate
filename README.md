@@ -21,8 +21,8 @@ This boilerplate is based on how whe are currently working with Drupal at Taller
 | CI_ACQUIA_DIR | The name of the folder to use in CI when deploying to Acquia |
 | ACQUIA_GIT_DOMAIN | The domain of Acquia's Git repository |
 | ACQUIA_GIT_REPO | The Acquia's Git repository of your project |
-| GIT_USER_EMAIL | The email to be in the Git config while deploying to Acquia |
-| GIT_USER_NAME | The name to be in the Git config while deploying to Acquia |
+| GIT_USER_EMAIL | The email to be in the Git config while building in Semaphore and deploying to Acquia |
+| GIT_USER_NAME | The name to be in the Git config while building in Semaphore and deploying to Acquia |
 | DRUPAL_SITE_NAME | The name of your Drupal site |
 | SERVER_ADMIN | Apache server admin |
 
@@ -31,7 +31,13 @@ This boilerplate is based on how whe are currently working with Drupal at Taller
  - Commit Drupal generated files
 
 ### Deploying
- - In a Semaphore job, place the following command:
+Currently, the integration and delivry features of this boilerplate assume you are using Semaphore CI for building and hosting the environments in Acquia Cloud. Add more generic scripts that can be used to build in other CI systems or deploy in other servers is one of the many improvements we need to do.
+
+ - In the setup of the Semaphore project, place the following command:
+```
+make ci-setup
+```
+ - In a job of this project, place the following command:
 ```
 make ci-run
 ```
