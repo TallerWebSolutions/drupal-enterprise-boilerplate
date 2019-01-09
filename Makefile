@@ -26,4 +26,22 @@ clean:
 build:
 	docker-compose build app
 
+ci-run:
+	./scripts/ci-run.sh
+
+ci-check:
+	./scripts/ci-check.sh
+
+ci-install:
+	./scripts/ci-install.sh
+
+ci-tests:
+	./scripts/ci-tests.sh
+
+ci-install-prod:
+	./scripts/ci-install-prod.sh
+
+ci-deploy:
+	./scripts/ci-deploy.sh
+
 default: run
