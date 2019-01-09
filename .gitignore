@@ -4,3 +4,12 @@ temp/*
 
 # Composer dependencies.
 /vendor/
+
+# Drupal core and contrib files.
+/web/core
+/web/profiles/contrib
+/web/modules/contrib
+/web/themes/contrib
+
+# Drupal files folder.
+/web/sites/default/files
