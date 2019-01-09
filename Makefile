@@ -26,6 +26,9 @@ clean:
 build:
 	docker-compose build app
 
+ci-setup:
+        ./scripts/ci-setup.sh
+
 ci-run:
 	./scripts/ci-run.sh
 
