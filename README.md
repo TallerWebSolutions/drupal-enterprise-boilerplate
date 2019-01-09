@@ -6,7 +6,9 @@ This boilerplate is based on how whe are currently working with Drupal at Taller
  - Docker-compose
  - Make
 
-## Setting up
+## How to Use
+
+### Installing locally
  - Clone this repository
  - Remove .git folder
  - Now is the moment I suggest you to create your own Git repo and commit the boilerplate code, but it is really up to you
@@ -25,6 +27,8 @@ This boilerplate is based on how whe are currently working with Drupal at Taller
 | SERVER_ADMIN | Apache server admin |
 
  - Run `make`
+ - If everything went right, you should be able to access your Drupal site in your localhost
+ - Commit Drupal generated files
 
 ## Features
  - Ready to use Drupal installation
