@@ -26,8 +26,8 @@ services:
     links:
      - database:database-host
     volumes:
-      - $HOME/.ssh:/drupal/.ssh
-      - $HOME/.gitconfig:/drupal/.gitconfig
+      - $HOME/.ssh:/taller/.ssh
+      - $HOME/.gitconfig:/taller/.gitconfig
       - $PWD:/taller/app
       - $PWD/temp/.bash_history:/taller/.bash_history
 
