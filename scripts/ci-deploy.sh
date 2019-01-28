@@ -40,13 +40,6 @@ cp ./composer.json $ACQUIA_DIR/composer.json
 cp ./composer.lock $ACQUIA_DIR/composer.lock
 cp ./README.md $ACQUIA_DIR/README.md
 
-# SimpleSamlPHP
-sudo ln -sr $ACQUIA_DIR/vendor/simplesamlphp/simplesamlphp/www/ $ACQUIA_DIR/docroot/simplesaml
-sudo cp -r ./docker/simplesamlphp/config $ACQUIA_DIR/vendor/simplesamlphp/simplesamlphp/
-sudo cp -r ./docker/simplesamlphp/metadata $ACQUIA_DIR/vendor/simplesamlphp/simplesamlphp/
-sudo cp -r ./docker/simplesamlphp/patch/HTTP.php $ACQUIA_DIR/vendor/simplesamlphp/simplesamlphp/lib/SimpleSAML/Utils/HTTP.php
-sudo rm -f $ACQUIA_DIR/vendor/simplesamlphp/simplesamlphp/.gitignore
-
 # Make Acquia hooks executable.
 sudo chmod -R +x $ACQUIA_DIR/hooks
 
