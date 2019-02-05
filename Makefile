@@ -47,4 +47,12 @@ ci-install-prod:
 ci-deploy:
 	./scripts/ci-deploy.sh
 
+sniff:
+	docker-compose run app ./bin/phpcs ./web/modules/custom
+	docker-compose run app ./bin/phpcs ./web/modules/sandbox
+
+beautify:
+	docker-compose run app ./bin/phpcbf ./web/modules/custom
+	docker-compose run app ./bin/phpcbf ./web/modules/sandbox
+
 default: run
