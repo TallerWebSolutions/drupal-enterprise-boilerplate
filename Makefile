@@ -32,7 +32,7 @@ ci-setup:
 ci-run:
 	./scripts/ci-run.sh
 
-ci-check:
+ci-check: sniff
 	./scripts/ci-check.sh
 
 ci-install:
