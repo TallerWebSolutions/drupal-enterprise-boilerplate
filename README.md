@@ -30,6 +30,21 @@ This boilerplate is based on how whe are currently working with Drupal at Taller
  - If everything went right, you should be able to access your Drupal site in your localhost
  - Commit Drupal generated files
 
+### Coding Standards
+
+#### PHP Code Sniffer
+To mantain the [Drupal Coding Standards](https://www.drupal.org/docs/develop/standards) in our custom code, we use the [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer) lib with the [Coder module](https://www.drupal.org/project/coder).
+
+To run it against your project, use the following command from Makefile:
+```
+make sniff
+```
+Some errors in the sniffer can be automatically corrected by running:
+```
+make beautify
+```
+The remaining errors you'll have to fix by yourself.
+
 ### Deploying
 Currently, the integration and delivry features of this boilerplate assume you are using Semaphore CI for building and hosting the environments in Acquia Cloud. Add more generic scripts that can be used to build in other CI systems or deploy in other servers is one of the many improvements we need to do.
 
