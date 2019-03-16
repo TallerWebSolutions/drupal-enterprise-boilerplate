@@ -33,6 +33,7 @@ sudo rm -Rf $ACQUIA_DIR/README.md
 
 # Copy new directories.
 cp -r ./web $ACQUIA_DIR/docroot
+cp -r ./config/* $ACQUIA_DIR/config
 cp -r ./scripts/acquia_hooks $ACQUIA_DIR/hooks
 cp -r ./vendor $ACQUIA_DIR/vendor
 cp -r ./bin $ACQUIA_DIR/bin
