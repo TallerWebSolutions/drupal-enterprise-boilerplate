@@ -24,6 +24,7 @@ find $SEMAPHORE_PROJECT_DIR -type d -name ".git" | xargs sudo rm -rf
 
 # Remove old directories.
 sudo rm -Rf $ACQUIA_DIR/docroot
+sudo rm -Rf $ACQUIA_DIR/config
 sudo rm -Rf $ACQUIA_DIR/hooks
 sudo rm -Rf $ACQUIA_DIR/vendor
 sudo rm -Rf $ACQUIA_DIR/bin
@@ -33,7 +34,7 @@ sudo rm -Rf $ACQUIA_DIR/README.md
 
 # Copy new directories.
 cp -r ./web $ACQUIA_DIR/docroot
-cp -r ./config/* $ACQUIA_DIR/config
+cp -r ./config $ACQUIA_DIR/config
 cp -r ./scripts/acquia_hooks $ACQUIA_DIR/hooks
 cp -r ./vendor $ACQUIA_DIR/vendor
 cp -r ./bin $ACQUIA_DIR/bin
