@@ -48,11 +48,9 @@ ci-deploy:
 	./scripts/ci-deploy.sh
 
 sniff:
-	docker-compose run app ./bin/phpcs ./web/modules/custom
-	docker-compose run app ./bin/phpcs ./web/modules/sandbox
+	./scripts/sniff.sh
 
 beautify:
-	docker-compose run app ./bin/phpcbf ./web/modules/custom
-	docker-compose run app ./bin/phpcbf ./web/modules/sandbox
+	./scripts/beautify.sh
 
 default: run
