@@ -32,13 +32,13 @@ ci-setup:
 ci-run:
 	./scripts/ci-run.sh
 
-ci-check: sniff
+ci-check:
 	./scripts/ci-check.sh
 
 ci-install:
 	./scripts/ci-install.sh
 
-ci-tests:
+ci-tests: sniff
 	./scripts/ci-tests.sh
 
 ci-install-prod:
