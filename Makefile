@@ -53,4 +53,7 @@ sniff:
 beautify:
 	./scripts/beautify.sh
 
+xdebug:
+	./scripts/toggle-xdebug.sh
+
 default: run
