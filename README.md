@@ -64,6 +64,8 @@ If you want to use xdebug for debugging your code you just need to use the comma
 make xdebug
 ```
 
+**Note:** The command above must be executed within the container, in the folder where the Makefile is located.
+
 You'll receive a message indicating if xdebug is ON or OFF.
 
 Once xdebug is enabled, add breakpoints in the file you want to debug, go to the section Debug in your VSCode (the [PHP Debug extension](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug "PHP Debug Adapter for Visual Studio Code") is required) and clicks on the button **Start Debugging** (this button it's located on the top, beside a **Listen for XDebug** text). Now, you just have to access the application in your favorite browser and you'll see your VSCode stopping in the breakpoints you added.
