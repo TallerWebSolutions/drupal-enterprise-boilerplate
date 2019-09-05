@@ -1,5 +1,5 @@
 # Drupal Enterprise Boilerplate
-This boilerplate is based on how whe are currently working with Drupal at Taller. It may not be suitable for all kinds of projects and still needs lots of decoupling.
+This boilerplate is based on how we are currently working with Drupal at Taller. It may not be suitable for all kinds of projects and still needs lots of decoupling.
 
 ## Dependencies
  - Docker
