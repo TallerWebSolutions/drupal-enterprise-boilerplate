@@ -19,7 +19,7 @@ This boilerplate is based on how we are currently working with Drupal at Taller.
 | APP_IMAGE_NAME | The name of the Docker image for your site |
 | DB_CONTAINER_NAME | The name of the Docker container with the database |
 | CI_ACQUIA_DIR | The name of the folder to use in CI when deploying to Acquia. Should be __different__ from the repository's name |
-| ACQUIA_GIT_DOMAIN | The domain of Acquia's Git repository |
+| ACQUIA_GIT_DOMAIN | The domain of Acquia's __Git__ repository, __not the client domain__ |
 | ACQUIA_GIT_REPO | The Acquia's Git repository of your project |
 | GIT_USER_EMAIL | The email to be in the Git config while building in Semaphore and deploying to Acquia |
 | GIT_USER_NAME | The name to be in the Git config while building in Semaphore and deploying to Acquia |
