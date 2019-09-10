@@ -8,13 +8,13 @@
     }
   ],
   "require": {
-    "drupal/core": "8.*"
+    "drupal/core": "8.*",
+    "drush/drush": "^9.7"
   },
   "require-dev": {
     "drupal/coder": "8.*",
     "drupal-composer/drupal-scaffold": "^2.2",
     "drupal/console": "1.*",
-    "drush/drush": "^9.0",
     "squizlabs/php_codesniffer": "*",
     "phpunit/phpunit": "6.*"
   },
