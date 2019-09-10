@@ -46,15 +46,23 @@ make beautify
 The remaining errors you'll have to fix by yourself.
 
 ### Deploying
-Currently, the integration and delivry features of this boilerplate assume you are using Semaphore CI for building and hosting the environments in Acquia Cloud. Add more generic scripts that can be used to build in other CI systems or deploy in other servers is one of the many improvements we need to do.
+Currently, the integration and delivery features of this boilerplate assume you are using Semaphore CI for building and hosting the environments in Acquia Cloud. Add more generic scripts that can be used to build in other CI systems or deploy in other servers is one of the many improvements we need to do.
 
  - In the setup of the Semaphore project, place the following command:
 ```
 make ci-setup
 ```
- - In a job of this project, place the following command:
+ - In a job of this project, place the following commands:
 ```
-make ci-run
+git config --global core.autocrlf true
+make ci-check
+make ci-install
+make ci-tests
+make ci-install-prod
+make ci-deploy
+make clean
+docker volume ls -qf dangling=true | xargs -r docker volume rm
+docker-cache snapshot
 ```
 
 ### Debugging

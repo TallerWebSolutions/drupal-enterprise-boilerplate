@@ -29,9 +29,6 @@ build:
 ci-setup:
 	./scripts/ci-setup.sh
 
-ci-run:
-	./scripts/ci-run.sh
-
 ci-check:
 	./scripts/ci-check.sh
 
