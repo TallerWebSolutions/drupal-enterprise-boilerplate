@@ -755,6 +755,15 @@ $settings['file_scan_ignore_directories'] = [
 $settings['entity_update_batch_size'] = 50;
 
 /**
+ * Connect to db in Acquia.
+ * 
+ * Checks if the script is running on ACQUIA and require custom configurations for database connection.
+ */
+if (isset($_ENV['AH_SITE_ENVIRONMENT']) && file_exists('/var/www/site-php')) {
+  require '/var/www/site-php/' . $_ENV['AH_SITE_GROUP'] . '/' . $_ENV['AH_SITE_GROUP'] . '-settings.inc';
+}
+
+/**
  * Load local development override configuration, if available.
  *
  * Use settings.local.php to override variables on secondary (staging,
