@@ -13,3 +13,6 @@ temp/*
 
 # Drupal files folder.
 /web/sites/default/files
+
+#Drupal config files
+/web/sites/settings.local.php
