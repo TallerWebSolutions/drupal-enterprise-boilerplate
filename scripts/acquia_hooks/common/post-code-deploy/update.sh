@@ -29,7 +29,6 @@ drush_alias=$site'.'$target_env
   ../bin/drush @$drush_alias updb -y -vdd
   ../bin/drush @$drush_alias config-import --partial sync -y -vdd
   ../bin/drush @$drush_alias cr -vdd
-  ../bin/drush @$drush_alias entity-updates -y -vdd
 )
 
 if [ "$source_branch" != "$deployed_tag" ]; then
