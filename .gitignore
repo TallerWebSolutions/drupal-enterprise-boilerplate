@@ -15,4 +15,4 @@ temp/*
 /web/sites/default/files
 
 #Drupal config files
-/web/sites/settings.local.php
+/web/sites/**/settings.local.php
