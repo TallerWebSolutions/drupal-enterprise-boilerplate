@@ -5,6 +5,9 @@ temp/*
 # Composer dependencies.
 /vendor/
 
+# Node modules.
+node_modules
+
 # Drupal core and contrib files.
 /web/core
 /web/profiles/contrib
