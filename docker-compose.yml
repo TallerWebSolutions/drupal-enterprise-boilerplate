@@ -8,11 +8,12 @@ services:
       - MYSQL_DATABASE=drupal
       - MYSQL_PASSWORD=password
       - MYSQL_ROOT_PASSWORD=password
+      - DRUPAL_SITE_NAME=${DRUPAL_SITE_NAME}
 
   app:
     extends:
       service: meta
-    image: APP_IMAGE_NAME
+    image: ${APP_IMAGE_NAME}
     build:
       context: ./docker/
       args:
@@ -35,7 +36,7 @@ services:
     extends:
       service: meta
     image: mysql:5.6
-    container_name: DB_CONTAINER_NAME
+    container_name: ${DB_CONTAINER_NAME}
     volumes:
       - mysql:/var/lib/mysql
 
