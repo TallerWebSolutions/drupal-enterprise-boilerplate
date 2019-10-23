@@ -87,6 +87,7 @@ Once xdebug is enabled, add breakpoints in the file you want to debug, go to the
  - Drupal Console
  - Node (with NVM)
  - Pre configured Acquia deploy scripts
+ - Configured Git Hook to execute the code sniffer on pre-push.
 
 ## FYI
  - This boilerplate works best with Drupal ^8.5

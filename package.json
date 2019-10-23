@@ -1,0 +1,22 @@
+{
+  "name": "drupal-enterprise-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TallerWebSolutions/drupal-enterprise-boilerplate.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TallerWebSolutions/drupal-enterprise-boilerplate/issues"
+  },
+  "homepage": "https://github.com/TallerWebSolutions/drupal-enterprise-boilerplate#readme",
+  "dependencies": {
+    "husky": "^3.0.9"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "./scripts/git-hooks/pre-push.sh"
+    }
+  }
+}
