@@ -39,5 +39,10 @@ services:
     volumes:
       - mysql:/var/lib/mysql
 
+  devtools:
+    image: taller/php7-node
+    volumes:
+      - $PWD:/taller/app
+
 volumes:
   mysql:
