@@ -2,8 +2,8 @@
 
 set -e
 
-docker-compose run --entrypoint ./docker/run-entrypoint.sh -w /taller/app --rm app \
+docker-compose run --rm devtools \
   ./bin/phpcs ./web/modules/custom
 
-docker-compose run --entrypoint ./docker/run-entrypoint.sh -w /taller/app --rm app \
+docker-compose run --rm devtools \
   ./bin/phpcs ./web/modules/sandbox
