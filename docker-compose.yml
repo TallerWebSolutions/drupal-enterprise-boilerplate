@@ -41,6 +41,7 @@ services:
 
   devtools:
     image: taller/php7-node
+    entrypoint: ./docker/run-entrypoint.sh
     volumes:
       - $PWD:/taller/app
 
