@@ -23,6 +23,9 @@ clean:
 	docker-compose down
 	docker rmi APP_IMAGE_NAME
 
+ci-clean:
+	docker-compose down
+
 build:
 	docker-compose build app
 

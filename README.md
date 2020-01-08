@@ -60,7 +60,7 @@ make ci-install
 make ci-tests
 make ci-install-prod
 make ci-deploy
-make clean
+make ci-clean
 docker volume ls -qf dangling=true | xargs -r docker volume rm
 docker-cache snapshot
 ```
