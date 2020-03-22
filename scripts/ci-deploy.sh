@@ -12,7 +12,7 @@ git clone --branch master ACQUIA_GIT_REPO $ACQUIA_DIR
 (
   cd $ACQUIA_DIR
 
-  if [[ `git branch -a | grep $BRANCH_NAME` ]]; then
+  if [[ `git branch -a | grep -w $BRANCH_NAME` ]]; then
     git checkout ${BRANCH_NAME}
   else
     git checkout -b ${BRANCH_NAME}
