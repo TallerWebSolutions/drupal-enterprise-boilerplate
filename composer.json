@@ -16,7 +16,8 @@
     "drupal-composer/drupal-scaffold": "^2.2",
     "drupal/console": "1.*",
     "squizlabs/php_codesniffer": "*",
-    "phpunit/phpunit": "6.*"
+    "phpunit/phpunit": "6.*",
+    "drupal/devel": "^2.1"
   },
   "scripts": {
     "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
