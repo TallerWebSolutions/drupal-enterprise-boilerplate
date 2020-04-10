@@ -88,6 +88,7 @@ Once xdebug is enabled, add breakpoints in the file you want to debug, go to the
  - Node (with NVM)
  - Pre configured Acquia deploy scripts
  - Configured Git Hook to execute the code sniffer on pre-push.
+ - [cweagans/composer-patches](https://github.com/cweagans/composer-patches) as a dependency, so patch support is already in place
 
 ## FYI
  - This boilerplate works best with Drupal ^8.5
