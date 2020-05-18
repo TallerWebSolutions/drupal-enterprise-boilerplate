@@ -9,12 +9,14 @@ export USER_ID=$(shell id -u)
 #       than the containers user.
 export GROUP_ID=$(shell if [ `id -g` == '20' ]; then echo '1000'; else echo `id -g`; fi)
 
+APP_CONTAINER=$(shell docker-compose ps | grep _app_run_ | cut -d" " -f 1)
+
 run:
 	touch temp/.bash_history
 	docker-compose run --service-ports --rm app
 
 in:
-	docker exec -it $(shell docker-compose ps | grep _app_run_ | cut -d" " -f 1) /bin/bash
+	docker exec -it ${APP_CONTAINER} /bin/bash
 
 stop:
 	docker-compose stop
@@ -57,3 +59,16 @@ xdebug:
 	./scripts/toggle-xdebug.sh
 
 default: run
+
+
+## MacOSx only
+
+run-macos:
+	touch temp/.bash_history
+	docker-compose -f docker-compose.yml -f docker-compose.macos.yml run --service-ports --rm app
+
+sniff-macos:
+	docker exec -it ${APP_CONTAINER} ./bin/phpcs ./web/modules/custom ./web/modules/sandbox
+
+beautify-macos:
+	docker exec -it ${APP_CONTAINER} ./bin/phpcbf ./web/modules/custom ./web/modules/sandbox
