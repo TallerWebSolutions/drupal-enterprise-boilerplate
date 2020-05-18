@@ -6,6 +6,9 @@ This boilerplate is based on how we are currently working with Drupal at Taller.
  - Docker-compose
  - Make
 
+- MacOS users, [follow this post to configure NFS first.](https://www.jeffgeerling.com/blog/2020/revisiting-docker-macs-performance-nfs-volumes)
+
+
 ## How to Use
 
 ### Installing locally
@@ -26,14 +29,17 @@ This boilerplate is based on how we are currently working with Drupal at Taller.
 | DRUPAL_SITE_NAME | The name of your Drupal site |
 | SERVER_ADMIN | Apache server admin |
 
- - Run `make`
+ - Run `make` (`make run-macos` to MacOS users)
  - If everything went right, you should be able to access your Drupal site in your localhost
+ - You can use the default login and password: `admin` and `123456`
  - Commit Drupal generated files
 
 ### Coding Standards
 
 #### PHP Code Sniffer
 To mantain the [Drupal Coding Standards](https://www.drupal.org/docs/develop/standards) in our custom code, we use the [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer) lib with the [Coder module](https://www.drupal.org/project/coder).
+
+> MacOS users, use the following commands with the sufix `-macos`, eg: `make sniff-macos`
 
 To run it against your project, use the following command from Makefile:
 ```

@@ -1,0 +1,23 @@
+version: '2.1'
+
+services:
+  app:
+    volumes:
+      - $HOME/.ssh:/taller/.ssh
+      - $HOME/.gitconfig:/taller/.gitconfig
+      - $PWD/temp/.bash_history:/taller/.bash_history
+      - "code_nfsmount:/taller/app"
+
+  devtools:
+    container_name: devtools
+    volumes:
+      - "code_nfsmount:/taller/app"
+
+volumes:
+  mysql:
+  code_nfsmount:
+    driver: local
+    driver_opts:
+      type: nfs
+      o: addr=host.docker.internal,rw,nolock,hard,nointr,nfsvers=3
+      device: ":/System/Volumes/Data/${PWD}"
