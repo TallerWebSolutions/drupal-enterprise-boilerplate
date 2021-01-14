@@ -10,8 +10,7 @@
 # Usage: post-code-deploy site target-env source-branch deployed-tag repo-url
 #                         repo-type
 
-# @TODO Uncomment this when the drush9 bug is fixed.
-# set -e
+set -e
 
 # Map the script inputs to convenient names.
 site="$1"
