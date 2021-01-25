@@ -70,6 +70,20 @@ make ci-clean
 docker volume ls -qf dangling=true | xargs -r docker volume rm
 docker-cache snapshot
 ```
+### Backing up and Restoring local databases
+Once your Drupal application has started you can generate a backup of your database anytime you want. You just need to run the following command:
+
+```
+make backup-local-database
+```
+
+The backup will be generated inside of the **temp** folder with the name **backup_local_database_{date}.sql**.
+
+And, if you need to restore any database, just place the SQL dump inside of the **temp** folder with the name **local_database.sql** and then run the following command:
+
+```
+make restore-local-database
+```
 
 ### Debugging
 If you want to use xdebug for debugging your code you just need to use the command below to enable it (or run the command again to disable):
