@@ -58,6 +58,12 @@ beautify:
 xdebug:
 	./scripts/toggle-xdebug.sh
 
+backup-local-database:
+	docker-compose run --rm app sh ./scripts/backup-local-database.sh
+
+restore-local-database:
+	docker-compose run --rm app sh ./scripts/restore-local-database.sh
+
 default: run
 
 
