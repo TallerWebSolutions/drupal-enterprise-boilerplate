@@ -3,7 +3,4 @@
 set -e
 
 docker-compose run --rm devtools \
-  ./bin/phpcbf ./web/modules/custom
-
-docker-compose run --rm devtools \
-  ./bin/phpcbf ./web/modules/sandbox
+  ./bin/phpcbf --ignore=node_modules ./web/modules/custom ./web/modules/sandbox ./web/themes/custom
